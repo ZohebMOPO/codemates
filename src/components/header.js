@@ -7,7 +7,7 @@ import {Link, useHistory } from 'react-router-dom';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 
 
-function header(backButton) {
+function Header(backButton) {
     return (
         <div className='header'>
             {backButton ? (
@@ -19,9 +19,9 @@ function header(backButton) {
                     <ArrowBackIosIcon fontSize='large' className='header__icon' />
                 </IconButton>
             )}
-            
-        </div>            
+
+        </div>
     )
 }
 
-export default header
+export default Header
