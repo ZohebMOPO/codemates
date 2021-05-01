@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import Header from './components/header';
 import Cards from './components/cards';
-import Options from './components/options'
+import Options from './components/options';
 
 function Wrapper() {
     return (
