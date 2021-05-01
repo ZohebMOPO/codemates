@@ -1,24 +1,27 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Header from './components/header';
-import Wrapper from './wrapper'
-import Home from './components/home.js';
+import Login from "./components/Login/Login";
+import Wrapper from './wrapper';
 import Error from './error/error'
 
 
 function App() {
   return (
-    <>
-     <Router>
-      <Header />
+    <BrowserRouter>
+    <div className='App'>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path='/app' exact component={Wrapper} />
         <Route component={Error} />
+        <Route path="/login" exact>
+          <Login login={true} method="login"/>
+        </Route>
+        <Route path="/register" exact>
+          <Login login={false} method="register"/>
+        </Route>
       </Switch>
-     </Router>
-    </>
+    </div>
+    </BrowserRouter>
   );
 }
 
