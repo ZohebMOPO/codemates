@@ -1,6 +1,7 @@
 import React from 'react';
-import Wrapper from './wrapper'
 import './App.css';
+import Wrapper from './wrapper'
+
 
 function App() {
   return (
