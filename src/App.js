@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
-import Login from "./components/Login/Login";
+import Login from "./Login/Login";
 import Wrapper from './wrapper';
 import Error from './error/error'
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import Home from "./components/home.js"
 
 
 function App() {
