@@ -8,9 +8,9 @@
 
 ## Structure-FrontEnd
 
-|  Stacks                         |      Description                |
-| :-------------------            | :-------------------:           |
-|  [Material-UI](Material-UI)     | For Icons and images            |
-|  [ReactJS](ReactJS)             | Creating the front-part of web  |
-|  [HTML](HTML)                   | For rendering elements          |  
-|  [CSS](CSS)                     | For styling the elements        |
+|  Stacks                                      |      Description                |
+| :-------------------                         | :-------------------:           |
+|  [Material-UI](https://material-ui.com/)     | For Icons and images            |
+|  [ReactJS](https://reactjs.org/)             | Creating the front-part of web  |
+|  [HTML](https://www.w3schools.com/html/)     | For rendering elements          |  
+|  [CSS](https://www.w3schools.com/css/)       | For styling the elements        |
