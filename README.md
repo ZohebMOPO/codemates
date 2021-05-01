@@ -1,4 +1,4 @@
-<p align="center"><img height=100 src="https://i.postimg.cc/HssrpXFt/CODEMATES.png" /></p>
+<p align="center"><img height=100 src="https://i.postimg.cc/7L0M5g62/Loho.jpg" /></p>
 
 <p align="center">
   <strong>Taking Dev connections to mars.</strong>
