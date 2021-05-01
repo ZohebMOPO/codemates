@@ -1,6 +1,6 @@
 import React from 'react';
 import './option.css'
-import IconButton from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
 import ReplayIcon from '@material-ui/icons/Replay';
 import CloseIcon from '@material-ui/icons/Close';
 import StarIcon from '@material-ui/icons/Star';

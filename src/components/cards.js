@@ -1,11 +1,8 @@
 import React from 'react';
 import './cards.css'
 
-<<<<<<< HEAD
-function Cards() {
-=======
-function Card(props) {
->>>>>>> 866d31ef45e0279a97fbec420f38364fef3c2937
+function Cards(props) {
+
     return (
       <aside class="profile-card">
    <div class="mask-shadow"></div>
@@ -42,10 +39,4 @@ function Card(props) {
     )
 }
 
-<<<<<<< HEAD
 export default Cards
-=======
-export default Card
-
-{/*<img className="image" src={Image} alt=''/>*/}
->>>>>>> 866d31ef45e0279a97fbec420f38364fef3c2937
