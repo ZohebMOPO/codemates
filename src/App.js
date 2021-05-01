@@ -1,18 +1,24 @@
 import React from 'react';
 import './App.css';
-import Wrapper from './wrapper';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Header from './components/header';
+import Wrapper from './wrapper'
+import Home from './components/home.js';
 import Error from './error/error'
-import { BrowserRouter, Route, Switch} from 'react-router-dom';
 
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
+     <Router>
+      <Header />
       <Switch>
+        <Route path="/" exact component={Home} />
         <Route path='/app' exact component={Wrapper} />
         <Route component={Error} />
       </Switch>
-    </BrowserRouter>
+     </Router>
+    </>
   );
 }
 
