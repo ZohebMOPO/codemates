@@ -1,7 +1,7 @@
 import React from 'react';
 import './cards.css'
 
-function cards() {
+function Cards() {
     return (
         <div>
             <img className="image" src={Image} alt=''/>
@@ -9,4 +9,4 @@ function cards() {
     )
 }
 
-export default cards
+export default Cards

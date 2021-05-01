@@ -7,7 +7,7 @@ import StarIcon from '@material-ui/icons/Star';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FlashOnIcon from '@material-ui/icons/FlashOn';
 
-function options() {
+function Options() {
     return (
         <div className='swipeButtons'>
             <IconButton className='swipeButtons__repeat'>
@@ -29,4 +29,4 @@ function options() {
     )
 }
 
-export default options
+export default Options
