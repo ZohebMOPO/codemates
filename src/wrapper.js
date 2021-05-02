@@ -31,7 +31,7 @@ function Wrapper() {
             <div>
               <Cards
                 name={profile ? profile.username : "USERNAME"}
-                profession={profile ? profile.skill : "BEGINNER"}
+                skill={profile ? profile.skill : "BEGINNER"}
                 img="https://en.gravatar.com/userimage/42992842/b8e8ff24d6f1cb84bbe5c839903086bb.png?size=200"
               />
             </div>
