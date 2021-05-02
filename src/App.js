@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 import Home from './components/home'
-import Login from "./components/Login/Login";
+import Login from "./routes/Login/Login";
 import Wrapper from './wrapper';
-import Error from './error/error'
-
+import Error from './routes/error/error'
+import { BrowserRouter, Route, Switch } from "react-router-dom"
 
 function App() {
   return (
@@ -13,13 +13,13 @@ function App() {
       <Switch>
         <Route path='/home' exact component={Home}/>
         <Route path='/app' exact component={Wrapper} />
-        <Route component={Error} />
         <Route path="/login" exact>
           <Login login={true} method="login"/>
         </Route>
         <Route path="/register" exact>
           <Login login={false} method="register"/>
         </Route>
+        <Route component={Error} />
       </Switch>
     </div>  
     </BrowserRouter>

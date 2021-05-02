@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import constants from "../../api/constants";
 
 import "./Login.css"
 import { Link } from "react-router-dom";
@@ -11,7 +12,7 @@ const Login = (props) => {
     const [skill, setSkill] = useState("");
 
     const loginHandler = () => {
-        axios.post(`http://localhost:8080/api/${props.method}`, {
+        axios.post(`${constants.API_HOST}/api/${props.method}`, {
             username,
             password,
             email,
