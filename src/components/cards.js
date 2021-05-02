@@ -2,13 +2,32 @@ import React from 'react';
 import './cards.css'
 
 function Cards(props) {
-
+  const images = [
+    {
+      id: 1,
+      src="https://en.gravatar.com/userimage/42992842/b8e8ff24d6f1cb84bbe5c839903086bb.png?size=200"
+    }
+    {
+      id: 2,
+      src="https://storage.googleapis.com/chydlx/codepen/minimalist-profile-card/user-img.jpg"
+    }
+    {
+      id: 3,
+      src="https://images.unsplash.com/photo-1499557354967-2b2d8910bcca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7d5363c18112a02ce22d0c46f8570147&auto=format&fit=crop&w=635&q=80%20635w"
+    }
+    {
+      id: 4,
+      src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aHVtYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    }
+  ]
     return (
       <aside class="profile-card">
    <div class="mask-shadow"></div>
    <header>
      <a href="https://tutsplus.com">
-       <img src={props.img} />
+       {images.map(image => {
+          return <img key={image.id} src={image.src} alt="cannot show image" />
+       })}
      </a>
      <h1>{props.name}</h1>
      <h2>{props.languages}</h2>
