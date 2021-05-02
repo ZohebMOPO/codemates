@@ -48,11 +48,11 @@ export default function Friends() {
 						boxShadow: "0px 5px 10px 0px rgba(0, 0, 0, 0.1)"
 					}}>
 						<p><strong>Username: {friend.username}</strong></p>
-						{friend.github && friend.github.length > 0 ? <h1>Github: {friend.github}</h1> : ""}
-						{friend.twitter && friend.github.length > 0 ? <h1>Twitter: {friend.twitter}</h1> : ""}
-						{friend.linkedIn && friend.github.length > 0 ? <h1>LinkedIn: {friend.linkedIn}</h1> : ""}
-						{friend.facebook && friend.github.length > 0 ? <h1>Facebook: {friend.facebook}</h1> : ""}
-						{friend.discord && friend.github.length > 0 ? <h1>Discord: {friend.discord}</h1> : ""}
+						{friend.github && friend.github.length > 0 ? <p>Github: {friend.github}</p> : ""}
+						{friend.twitter && friend.github.length > 0 ? <p>Twitter: {friend.twitter}</p> : ""}
+						{friend.linkedIn && friend.github.length > 0 ? <p>LinkedIn: {friend.linkedIn}</p> : ""}
+						{friend.facebook && friend.github.length > 0 ? <p>Facebook: {friend.facebook}</p> : ""}
+						{friend.discord && friend.github.length > 0 ? <p>Discord: {friend.discord}</p> : ""}
 					</li>)
 				}
 			</ul>
