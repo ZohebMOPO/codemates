@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Home from './components/home'
 import Login from "./components/Login/Login";
 import Wrapper from './wrapper';
 import Error from './error/error'
