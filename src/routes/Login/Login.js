@@ -16,11 +16,11 @@ const Login = (props) => {
             username,
             password,
             email,
-            languages: `${languages}`,
+            languages: languages,
             skill
         })
         .then(res => {
-            console.log(res.data, "Success!!!!")
+            localStorage.setItem("token", res.data.token);
         })
         .catch(err => alert("Enter valid details"))
     }
@@ -38,7 +38,7 @@ const Login = (props) => {
                         null :
                         <React.Fragment>
                             <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)}/>
-                            <input type="text" placeholder="Languages(comma seperated values)" onChange={(e) => setLanguages(e.target.value.split(","))}/>
+                            <input type="text" placeholder="Languages(comma seperated values)" onChange={(e) => setLanguages(e.target.value.split(",").replace(" ", ""))}/>
                             <select className="Select" onChange={e => setSkill(e.target.selectedOptions[0].text)}>
                                 <option>--Select--</option>
                                 <option>Beginner</option>
