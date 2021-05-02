@@ -17,7 +17,7 @@ function ChatScreen() {
 
     const handleSend = (e) => {
         e.preventDefault();
-        setMessages([...messages,{ message: input}]);
+        setMessages([prevState => [...prevState, currentState]]);
         setInput('')
     }
 
