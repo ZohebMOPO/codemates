@@ -11,6 +11,7 @@ img{
   position:relative;
   width:280px;
   margin:0 auto;
+  margin-top: 5%;
   padding:40px 30px 30px;
   background:#fff;
   border: 5px solid rgba(255,255,255,.7);
@@ -97,7 +98,7 @@ img{
 .profile-social-links li a{
   width: 55px;
   height:55px;
-  display:block;
+  display: block;
   background:#f1f1f1;
   border-radius:50%;
   -webkit-transition: all 2.75s cubic-bezier(0,.83,.17,1);

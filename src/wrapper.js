@@ -1,12 +1,10 @@
-import React from 'react';
-import Header from './components/header';
+import React from 'react'
 import Cards from './components/cards';
 import Options from './components/options';
 
 function Wrapper() {
     return (
         <div>
-            <Header />
             <div>
               <Cards
                name="ALENA STUDIO"
