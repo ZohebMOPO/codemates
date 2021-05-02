@@ -24,10 +24,10 @@ function Wrapper() {
   return (
         <div>
           <div className="CardDeck">
-            {users && users.map( (user) => (
+            {users && users.map(user => {
                    <Cards
                    key={user.id} name={user.username} />
-               ))}
+               })}
           </div>
           <Options />
         </div>
