@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./home.css";
 
 function Home() {
@@ -8,9 +9,9 @@ function Home() {
           <div class="left"></div>
           <div class="right">
             <div class="content">
-              <h1>This is a heading</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia assumenda dolore reprehenderit ullam blanditiis ex sapiente pariatur tempore incidunt facilis?</p>
-              <button onClick="">Get Started</button>
+              <h1>Codemates</h1>
+              <p>The ultimate platform for finding codemates!</p>
+              <Link to="/login">Log In</Link>
             </div>
           </div>
         </div>

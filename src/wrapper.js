@@ -3,6 +3,7 @@ import Cards from './components/cards';
 import Options from './components/options';
 import axios from "axios";
 import constants from './api/constants';
+import { Link } from 'react-router-dom';
 
 function Wrapper() {
     const [matchedProfiles, setMatchedProfiles] = useState([]);
@@ -29,13 +30,22 @@ function Wrapper() {
     return (
         <div>
             <div>
-              <Cards
+              { matchedProfiles.length === 0 ? <h1>No matches found.</h1> : <Cards
                 name={profile ? profile.username : "USERNAME"}
                 skill={profile ? profile.skill : "BEGINNER"}
+                github={profile ? profile.github : undefined }
+                twitter={profile ? profile.twitter : undefined }
+                linkedIn={profile ? profile.linkedIn : undefined }
+                discord={profile ? profile.discord : undefined }
+                facebook={profile ? profile.facebook : undefined }
                 img="https://en.gravatar.com/userimage/42992842/b8e8ff24d6f1cb84bbe5c839903086bb.png?size=200"
-              />
+              />}
             </div>
-            <Options incrementUser={() => setIndex(index + 1 > matchedProfiles.length - 1 ? matchedProfiles.length - 1 : index + 1)} decrementUser={() => setIndex(index - 1 < 0 ? 0 : index - 1)} />
+            { 
+                matchedProfiles.length > 0 && 
+                <Options id={profile ? profile.id : undefined} incrementUser={() => setIndex(index + 1 > matchedProfiles.length - 1 ? matchedProfiles.length - 1 : index + 1)} decrementUser={() => setIndex(index - 1 < 0 ? 0 : index - 1)} /> 
+            }
+            <Link to="/friends">View Friends</Link>
         </div>
     )
 }

@@ -8,14 +8,13 @@ html {
   font-family: "Montserrat";
 }
 section {
+  min-height: 100vh;
   min-height: 100%;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #1e1f26;
-  margin-top: -60px;
-  margin-bottom: -120px;
   overflow-x: hidden;
 }
 
@@ -50,14 +49,15 @@ section {
 }
 .right h1 {
   font-size: 40px;
-  font-weight: lighter;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .right p {
   margin: 20px 0;
   font-weight: 500;
   line-height: 25px;
 }
-.right button {
+.right a {
   text-decoration: none;
   text-transform: uppercase;
   background-color: white;
